@@ -14,10 +14,10 @@
     app.use(cors({
     origin: [
         'http://localhost:3000',
-        process.env.CLIENT_URL,
+        'https://vaultpay-gamma.vercel.app',
     ].filter(Boolean),
     credentials: true,
-    }));
+}));
 
     app.use(express.json());
 
